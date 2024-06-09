@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            var img = document.getElementById("myImage");
+             
+            context.drawImage(img, 100, 100, 200, 200, 50,50, 200, 200);
+        }
+        // function crop(){
+        //     console.log("Crop");
+        //     const img = "sunset.jpg";
+        //     var canvas = document.getElementById("myCanvas");
+        //     var context = canvas.getContext("2d");
+        //     context.drawImage(img, 100, 300, 
+        //         300, 300, 0, 0, 300, 300);
+        // }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <button onclick="crop()">Crop Button</button>
+    <img src="https://live.staticflickr.com/47/150654741_ae02588670_b.jpg" id="myImage"/>
+    
+</body>
+</html>
